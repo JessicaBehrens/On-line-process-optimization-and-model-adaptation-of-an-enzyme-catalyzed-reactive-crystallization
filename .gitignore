@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files controller
+__pycache__/ controller
+*.py[cod] controller
+*$py.class controller
+ controller
+# Virtual environments controller
+.venv/ controller
+venv/ controller
+env/ controller
+ENV/ controller
+env.bak/ controller
+venv.bak/ controller
+ controller
+# Jupyter Notebook checkpoints controller
+.ipynb_checkpoints/ controller
+*/.ipynb_checkpoints/* controller
+ controller
+# Proprietary / Licensed Linear Solvers (HSL Coin DLLs) controller
+*.dll controller
+*.so controller
+*.dylib controller
+ controller
+# Scratch, temporary and log files controller
+scratch/ controller
+*.log controller
+*.tmp controller
+*.bak controller
+ controller
+# IDE and editor configurations controller
+.vscode/ controller
+.idea/ controller
+*.swp controller
+*.swo controller
+*~ controller
+ controller
+# Operating System files controller
+.DS_Store controller
+Thumbs.db controller
+ehthumbs.db controller
+desktop.ini controller
+ controller
+# LaTeX build auxiliary files (preserves .tex source files) controller
+*.aux controller
+*.bbl controller
+*.blg controller
+*.fdb_latexmk controller
+*.fls controller
+*.synctex.gz controller
+*.toc controller
+*.out controller

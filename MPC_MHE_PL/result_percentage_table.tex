@@ -1,0 +1,19 @@
+\begin{table*}[h]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+      \caption{Comparison of the final \ac{STY}, final amount of product salt, and final excess of \ac{3MAP} and \ac{IPA-3DPPA} for the different controller models. The total values are given together with the percentage difference with respect to the benchmark.}
+  \label{Tab:result percentage}
+ \begin{tabular}{c|c|c|c|c|c} 
+  Alg. & model & \ac{STY} & $n_{\text{p}}^{\prime\prime}$ (mmol) & $n_{\text{3MAP}}^{\prime\circ}$ (mmol) & $n_{\text{d}}^{\prime\prime}$ (mmol) \\ \hline \hline
+  \multirow{5}{*}{\ac{MPC}} & plant model & 20.9753 & 21.9518 & 0.0469 & 2.8098 \\ \cline{2-6}
+    & contr. model 1 & \cellcolor{red!8} 20.23\textsuperscript{\scriptsize -3.56\%} & \cellcolor{red!14} 19.93\textsuperscript{\scriptsize -9.19\%} & \cellcolor{green!36} 0.02\textsuperscript{\scriptsize -63.58\%} & \cellcolor{red!29} 3.94\textsuperscript{\scriptsize +40.30\%} \\ \cline{2-6}
+    & contr. model 2 & \cellcolor{red!7} 20.50\textsuperscript{\scriptsize -2.28\%} & \cellcolor{green!10} 23.04\textsuperscript{\scriptsize +4.96\%} & \cellcolor{red!40} 0.64\textsuperscript{\scriptsize +1255.03\%} & \cellcolor{red!40} 5.22\textsuperscript{\scriptsize +85.70\%} \\ \cline{2-6}
+    & contr. model 3 & \cellcolor{red!5} 20.74\textsuperscript{\scriptsize -1.11\%} & \cellcolor{green!6} 22.33\textsuperscript{\scriptsize +1.74\%} & \cellcolor{green!25} 0.03\textsuperscript{\scriptsize -30.78\%} & \cellcolor{red!39} 4.89\textsuperscript{\scriptsize +74.11\%} \\ \cline{2-6}
+    & contr. model 4 & \cellcolor{green!4} 21.18\textsuperscript{\scriptsize +0.99\%} & \cellcolor{red!11} 20.65\textsuperscript{\scriptsize -5.93\%} & \cellcolor{green!33} 0.02\textsuperscript{\scriptsize -54.30\%} & \cellcolor{green!34} 1.25\textsuperscript{\scriptsize -55.52\%} \\ \hline
+  \multirow{4}{*}{Adaptive \ac{MPC}}  & contr. model 1 & \cellcolor{red!7} 20.48\textsuperscript{\scriptsize -2.35\%} & \cellcolor{red!3} 21.95\textsuperscript{\scriptsize -0.01\%} & \cellcolor{green!7} 0.05\textsuperscript{\scriptsize -2.48\%} & \cellcolor{red!40} 7.10\textsuperscript{\scriptsize +152.81\%} \\ \cline{2-6}
+    & contr. model 2 & \cellcolor{red!3} 20.96\textsuperscript{\scriptsize -0.06\%} & \cellcolor{green!3} 21.99\textsuperscript{\scriptsize +0.17\%} & \cellcolor{green!12} 0.04\textsuperscript{\scriptsize -7.32\%} & \cellcolor{red!19} 3.32\textsuperscript{\scriptsize +17.99\%} \\ \cline{2-6}
+    & contr. model 3 & \cellcolor{green!3} 21.00\textsuperscript{\scriptsize +0.11\%} & \cellcolor{red!3} 21.89\textsuperscript{\scriptsize -0.29\%} & \cellcolor{green!15} 0.04\textsuperscript{\scriptsize -11.15\%} & \cellcolor{green!7} 2.75\textsuperscript{\scriptsize -2.19\%} \\ \cline{2-6}
+    & contr. model 4 & \cellcolor{red!3} 20.96\textsuperscript{\scriptsize -0.06\%} & \cellcolor{red!8} 21.23\textsuperscript{\scriptsize -3.30\%} & \cellcolor{green!28} 0.03\textsuperscript{\scriptsize -37.84\%} & \cellcolor{green!35} 1.13\textsuperscript{\scriptsize -59.79\%} \\ \hline
+    \end{tabular}
+\end{table*}
