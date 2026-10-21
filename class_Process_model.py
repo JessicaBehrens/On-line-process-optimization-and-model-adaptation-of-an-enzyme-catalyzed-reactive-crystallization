@@ -324,7 +324,7 @@ class Crystallization():
         Inputs:
             - molar_np0: Initial product salt seed molar amount [mmol]
         Outputs:
-            - L30: Initial seed crystal length (L) [mm]
+            - L0: Initial seed crystal length [mm]
             - self.N_0: Computed initial seed crystal count [-]
         """
         #----------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -342,7 +342,7 @@ class Crystallization():
         Description: Converts mean crystal length L and crystal count N0 to molar amount.
         #----------------------------------------------------------------------------------------------------------------------------------------------------- 
         Inputs:
-            - L3: Mean crystal length (L) [mm]
+            - L: Mean crystal length (L) [mm]
             - N0: Crystal count [-]
         Outputs:
             - molar_mass: Molar amount of product salt [mmol]
@@ -528,8 +528,8 @@ class Crystallization():
         V_sym = SX.sym('V',1) # [L]
         # volume + jitter to prevent zero division
         V = V_sym + 1e-12   # [L]
-        # volume of a single crystal (L^3)
-        L = SX.sym('L',1)  # [mm^3]
+        # length of a single crystal (L)
+        L = SX.sym('L',1)  # [mm]
 
         # control actions for ...
         # IPA feed
@@ -649,8 +649,8 @@ class Crystallization():
         G_p = (k_G *(S-1)**self.g) # linear growth rate [mm/s]
         G = - self.smooth_fmin(-G_p,0) #fmin(-G_p,0) # no negative growth (dissolution) [mm/s]
 
-        # change in mean crystal volume
-        dL = G  # [mm^3/s]
+        # change in mean crystal length
+        dL = G  # [mm/s]
 
         # Moment dynamics of third moment (total volume change rate)
         dmoment_3 = 3*dL*N0*L**2*self.shape_fac_V # [mm^3/s]
