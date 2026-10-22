@@ -133,11 +133,8 @@ def _extract_broken_mask(t_len, broken_mpc=None, broken_mhe=None):
 
 def _extract_state_trajectory(D, idx, j, p, N0=None): 
     """Extracts trajectory for state idx and dataset j, normalizing concentration by volume. """ 
-    if idx == p.idx_V or idx == p.idx_3MAP_np: 
+    if idx == p.idx_V or idx == p.idx_3MAP_np or idx == p.idx_L: 
         return D[idx, :, j] 
-    elif idx == p.idx_L: 
-        n0_val = N0 if N0 is not None else getattr(p, 'N_0', 1.0) 
-        return p.mass_2_L(D[idx, :, j], n0_val) 
     else: 
         if p.idx_V < D.shape[0]: 
             vol = D[p.idx_V, :, j] 
