@@ -111,7 +111,7 @@ If you use this code or datasets in your research, please cite:
 @article{Behrens2026AdaptiveMPC, 
   title     = {On-line process optimization and model adaptation of an enzyme catalyzed reactive crystallization}, 
   author    = {Behrens, Jessica; Kunde, Tom; von Langermann, Jan; Kienle, Achim}, 
-  journal   = {Chemical Engineering Journal}, 
+  journal   = {XXX}, 
   year      = {2026}, 
   volume    = {XX}, 
   number    = {X}, 
